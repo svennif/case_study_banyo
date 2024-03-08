@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'stonesansositcttmedium';
+    src: url('../fonts/stonesansositcttmedium.eot');
+    src: local('☺'), url('../fonts/stonesansositcttmedium.woff') format('woff'), url('../fonts/stonesansositcttmedium.woff2') format('woff2'), url('../fonts/stonesansositcttmedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StoneSansStdSemibold';
+    src: url('../fonts/StoneSansStdSemibold.eot');
+    src: local('☺'), url('../fonts/StoneSansStdSemibold.woff') format('woff'), url('../fonts/StoneSansStdSemibold.woff2') format('woff2'), url('../fonts/StoneSansStdSemibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: local('☺'), url('../fonts/RobotoBold.woff') format('woff'), url('../fonts/RobotoBold.woff2') format('woff2'), url('../fonts/RobotoBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: local('☺'), url('../fonts/RobotoMedium.woff') format('woff'), url('../fonts/RobotoMedium.woff2') format('woff2'), url('../fonts/RobotoMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: local('☺'), url('../fonts/RobotoRegular.woff') format('woff'), url('../fonts/RobotoRegular.woff2') format('woff2'), url('../fonts/RobotoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fontello";
+    src: url("../fonts/fontello.eot?57208413");
+    src: url("../fonts/fontello.eot?57208413#iefix") format("embedded-opentype"), url("../fonts/fontello.svg?57208413") format("svg"), url("../fonts/fontello.woff?57208413") format("woff"), url("../fonts/fontello.ttf?57208413") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

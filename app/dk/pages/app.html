@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>App page</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="../scripts/jquery.min.js"></script>
+		<script src="../scripts/jquery-ui.min.js"></script>
+		<script src="../scripts/services.js"></script>
+		<script src="../scripts/stock.js"></script>
+		<script src="../scripts/scripts.js"></script>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<link rel="stylesheet" href="../css/autocomplete.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/extra.css" />
+
+		<script>
+			var APP_VERSION = 3;
+		</script>
+	</head>
+	<body>
+		<div class="wrap app">
+			<div class="top">
+				<div class="row">
+					<div class="left">
+						<div class="logo"></div>
+					</div>
+					<div class="right">
+						<div class="menu" onclick="openFullMenu()">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="inner-content app-content">
+				<!--START STOCK-->
+				<div class="inner-section stock">
+					<!-- Tabs -->
+					<div class="stock-tabs">
+						<div class="tab tab-stock selected-tab">
+							<a href="javascript:void(0)" data-subsection="stock" data-tab-value="#stock-content">Stock</a>
+						</div>
+						<div class="tab tab-stock">
+							<a href="javascript:void(0)" data-subsection="unprocessed" data-tab-value="#unprocessed-content">Unprocessed orders</a>
+						</div>
+					</div>
+
+					<!-- Tab content -->
+					<!--STOCK OVERVIEW-->
+					<div>
+						<div class="inner-stock-section stock-content active" id="stock-content" data-tab-content>
+							<div class="inner-stock-content row">Stock content</div>
+						</div>
+						<div class="inner-stock-section unprocessed-content" id="unprocessed-content" data-tab-content>
+							<div class="inner-stock-content row">Unprocessed orders</div>
+						</div>
+					</div>
+				</div>
+				<!--END STOCK-->
+			</div>
+		</div>
+		<div class="full-menu">
+			<div class="full-menu-logo"></div>
+			<h3>Welcome to the test case</h3>
+			<div class="row">
+				<a href="javascript:void(0)" class="button" onclick="closeFullMenu()">Stock management</a>
+			</div>
+			<div class="flag"></div>
+		</div>
+		<div class="system-load"></div>
+	</body>
+</html>
