@@ -12,3 +12,14 @@
     include("db.php");
 
     $db = DB::Connection();
+
+    try {
+      $stmt = $db->prepare("SELECT * FROM bootstock_store_visits");
+      $stmt->execute();
+
+      $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+      var_dump($result);
+    } catch (PDOException $e) {
+      echo "Error: " . $e->getMessage();
+    }
