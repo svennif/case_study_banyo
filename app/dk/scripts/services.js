@@ -1,5 +1,6 @@
 let getBasicServiceURL = function() {
-  return "http://127.0.0.1:8000/";
+  //! Actual URL: http://concordiatest.banyodev.dk
+  return "http://127.0.0.1:8000/"; // TODO Need to change back to the actual and original URL 
 };
 
 export async function getData() {

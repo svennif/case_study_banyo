@@ -4,7 +4,7 @@ class DB {
     const DB_HOST = 'localhost';
     const DB_NAME = 'development';
     const DB_USER = 'development';
-    const DB_PASSWORD = 'ym0UTh8i6Tx0!';
+    const DB_PASSWORD = 'ym0UTh8i6Tx0';
 
     public static function Connection(){
         
