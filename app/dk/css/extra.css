@@ -5,3 +5,58 @@
 .active[data-tab-content] {
   display: block;
 }
+
+.get_unprocessed_orders_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.get_unprocessed_orders_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get_unprocessed_orders_button {
+  width: fit-content;
+  padding: 0 30px;
+  text-align: center;
+  background: #53b7e8;
+  height: 45px;
+  line-height: 46px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'StoneSansStdSemibold';
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.get_unprocessed_orders_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 25%;
+}
+
+.get_unprocessed_orders_label {
+  font-family: 'StoneSansStdSemibold';
+}
+
+.get_unprocessed_orders_input {
+  border: 1px solid #000;
+}
+
+.get_unprocessed_orders_input::placeholder {
+  font-family: 'stonesansositcttmedium';
+  color: #bdbdbd;
+}
+
+.table-header {
+  background:#172962;
+  text-transform: capitalize;
+  font-family: 'StoneSansStdSemibold';
+}

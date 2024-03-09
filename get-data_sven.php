@@ -1,5 +1,6 @@
 <?php
     header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: *");
 
     /**
      * Error logging for debugging:
@@ -19,8 +20,9 @@
 
       $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-      echo json_encode($result);
+      echo json_encode($result); 
+      return json_encode($result);
       
     } catch (PDOException $e) {
       echo "Error: " . $e->getMessage();
-    }
+    } 

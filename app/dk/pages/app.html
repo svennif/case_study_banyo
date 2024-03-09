@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="../scripts/jquery.min.js"></script>
 		<script src="../scripts/jquery-ui.min.js"></script>
-		<script src="../scripts/services.js"></script>
-		<script src="../scripts/stock.js"></script>
+		<script type="module" src="../scripts/services.js"></script>
+		<script type="module" src="../scripts/stock.js"></script>
 		<script src="../scripts/scripts.js"></script>
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/fonts.css" />
@@ -55,7 +55,20 @@
 							<div class="inner-stock-content row">Stock content</div>
 						</div>
 						<div class="inner-stock-section unprocessed-content" id="unprocessed-content" data-tab-content>
-							<div class="inner-stock-content row">Unprocessed orders</div>
+							<div class="get_unprocessed_orders_wrapper">
+                <div class="get_unprocessed_orders_header">
+                  <button type="button" class="get_unprocessed_orders_button" onclick="getStockData()">Get unprocessed orders</button>
+                  <form class="get_unprocessed_orders_form">
+                    <span for="search" class="get_unprocessed_orders_label">Filter</span>
+                    <input class="get_unprocessed_orders_input" type="text" name="search" id="search" placeholder="Filter by data, order number, store or product" />
+                  </form>
+                </div>
+                <div id="get_unprocessed_orders_list">
+                  <div id="loader" style="display: none;">
+                    <img src="../images/loader.gif" alt="loader" />
+                  </div>
+                </div>
+							</div>
 						</div>
 					</div>
 				</div>
