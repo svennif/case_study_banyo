@@ -32,7 +32,12 @@ $(document).ready(function () {
 				th.textContent = key
 				headerRow.appendChild(th)
 			})
-		}
+		} else if (data.length === 0) {
+      const span = document.createElement('span');
+      span.classList.add('no-unprocessed-orders');
+      span.textContent = 'No unprocessed orders';
+      unprocessedElements.appendChild(span);
+    }
 		table.appendChild(headerRow)
 
 		// Create table data rows

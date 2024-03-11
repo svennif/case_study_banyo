@@ -39,7 +39,8 @@
   flex-direction: row;
   align-items: center;
   gap: 15px;
-  width: 25%;
+  width: 50%;
+  max-width: 550px;
 }
 
 .get_unprocessed_orders_label {
@@ -59,4 +60,9 @@
   background:#172962;
   text-transform: capitalize;
   font-family: 'StoneSansStdSemibold';
+}
+
+.no-unprocessed-orders {
+  color: #606060 !important;
+  font-style: italic;
 }

@@ -15,7 +15,7 @@
     $db = DB::Connection();
 
     try {
-      $stmt = $db->prepare("SELECT * FROM bootstock_store_visits");
+      $stmt = $db->prepare("SELECT * FROM bootstock_store_visits WHERE is_processed = 0");
       $stmt->execute();
 
       $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
