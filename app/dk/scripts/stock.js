@@ -1,9 +1,16 @@
 import { getData } from './services.js'
 
 $(document).ready(function () {
-	async function getStockData() {
+  const unprocessedElements = document.getElementById('get_unprocessed_orders_list')
+	
+  async function getStockData() {
     const loader = document.getElementById('loader')
     loader.style.display = 'block'
+    if (loader.style.display === 'block') {
+
+      // We clear the existing table, and rerun the function to display the new data
+      unprocessedElements.textContent = ''  
+    }
 		try {
 			const response = await getData()
 			displayUnprocessedOrders(response)
@@ -15,8 +22,6 @@ $(document).ready(function () {
 	}
 
 	function displayUnprocessedOrders(data) {
-		const unprocessedElements = document.getElementById('get_unprocessed_orders_list')
-
     // We clear the existing table, and rerun the function to display the new data
     unprocessedElements.textContent = ''
 
