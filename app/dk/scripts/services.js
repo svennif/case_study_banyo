@@ -1,6 +1,6 @@
 let getBasicServiceURL = function() {
   //! Actual URL: http://concordiatest.banyodev.dk
-  return "http://localhost:5500/"; // TODO Need to change back to the actual and original URL 
+  return "http://localhost:8080/"; // TODO Need to change back to the actual and original URL 
 };
 
 export async function getData() {
