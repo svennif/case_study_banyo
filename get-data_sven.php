@@ -19,13 +19,10 @@ try {
   SELECT 
     bootstock_store_visits.order_date, 
     bootstock_store_visits.order_number,
-    bootstock_store_visits.market,
-    bootstock_store_visits.store_id,
+    bootstock_stores.name as store_name,
     bootstock_transaction_products.transaction_type AS transaction_type,
-    bootstock_transaction_products.amount,
-    bootstock_transaction_products.product_id,
     bootstock_products.name as product_name,
-    bootstock_stores.name as store_name
+    bootstock_transaction_products.amount
   FROM 
     development.bootstock_store_visits
   JOIN 
