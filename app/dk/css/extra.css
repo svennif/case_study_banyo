@@ -62,6 +62,10 @@
   font-family: 'StoneSansStdSemibold';
 }
 
+.table-data {
+  text-transform: capitalize;
+}
+
 .no-unprocessed-orders {
   color: #606060 !important;
   font-style: italic;

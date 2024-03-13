@@ -50,7 +50,8 @@ $(document).ready(function () {
 			const tr = document.createElement('tr')
 			Object.values(item).forEach((value) => {
 				const td = document.createElement('td')
-				td.textContent = value
+        td.classList.add('table-data')
+				td.textContent = value.replace('_', ' ')
 				tr.appendChild(td)
 			})
 			table.appendChild(tr)
