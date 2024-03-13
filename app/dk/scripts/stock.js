@@ -1,3 +1,10 @@
+/**
+ * This script handles the functionality for displaying and filtering unprocessed orders in the stock page.
+ * It imports the `getData` function from the `services.js` module and uses it to fetch the data.
+ * The fetched data is then displayed in a table, and a search input is provided to filter the data based on order number, store, or product.
+ * The table is dynamically updated as the user types in the search input.
+ * The script also handles tab navigation for different sections of the stock page.
+ */
 import { getData } from './services.js'
 
 $(document).ready(function () {
@@ -47,8 +54,10 @@ $(document).ready(function () {
 
 		// Create table data rows
 		data.forEach((item) => {
+      // Create the table rows
 			const tr = document.createElement('tr')
 			Object.values(item).forEach((value) => {
+        // Create the table data cell and add the value to it
 				const td = document.createElement('td')
         td.classList.add('table-data')
 				td.textContent = value.replace('_', ' ')

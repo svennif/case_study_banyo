@@ -15,6 +15,7 @@ include("db.php");
 $db = DB::Connection();
 
 try {
+  // Prepare the SQL statement and execute it
   $stmt = $db->prepare("
   SELECT 
     bootstock_store_visits.order_date, 
@@ -37,10 +38,13 @@ try {
 
   $stmt->execute();
 
+  // Fetch all the rows from the result and set as associative array
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+  // Encode the result as JSON and return it
   echo json_encode($result);
   return json_encode($result);
 } catch (PDOException $e) {
+
   echo "Error: " . $e->getMessage();
 }
